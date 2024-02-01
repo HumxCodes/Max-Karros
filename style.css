@@ -1,0 +1,464 @@
+   html {
+    height: 100%;
+    width: 100%;
+
+     /* Estilos para o cabeçalho */
+     header {
+       background: linear-gradient(to bottom, #8B0000, #054F77);
+       text-align: center;
+       padding: 5px 0; /* Reduzi o padding para diminuir a altura */
+       color: white;
+       width: 100%;
+       z-index: 1000;
+       position: relative; /* Adicionei position: relative; */
+       display: flex; /* Adicionei display: flex; para alinhar os elementos horizontalmente */
+       justify-content: space-between; /* Espaçamento entre os elementos na horizontal */
+       align-items: center; /* Alinha os elementos verticalmente ao centro */
+     }
+
+     /* Estilos para a barra de pesquisa */
+     .search-bar {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: -20px; /* Ajustei a margem para mover acima do cabeçalho */
+       position: absolute;
+       width: 100%;
+     }
+
+     .search-input {
+       padding: 10px;
+       font-size: 16px;
+       background-color: #000;
+       color: #FFF;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+     }
+
+     .search-button {
+       padding: 10px 20px;
+       font-size: 16px;
+       background-color: #B70000;
+       color: #000;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+     }
+
+     .search-button:hover {
+       background-color: #054F77;
+     }
+
+     /* Estilos para o botão do menu */
+     .menu-button {
+       background-color: #333;
+       color: white;
+       font-size: 20px;
+       border: none;
+       padding: 10px;
+       cursor: pointer;
+       display: none; /* Oculta o botão em telas maiores */
+     }
+
+     .menu-button:hover {
+       background-color: #555;
+     }
+
+     /* Estilos para o logo */
+     .logo {
+       max-width: 250px;
+       height: auto;
+       margin: 0 auto; /* Centraliza a logo horizontalmente */
+     }
+
+     /* Estilos para a seção de ícones (Fale conosco e Login) */
+     .icons {
+       display: flex;
+       align-items: center;
+     }
+
+     .icons a {
+       margin-left: 20px; /* Espaçamento entre os ícones */
+     }
+     /* Estilos para o rodapé */
+      footer {
+        background: linear-gradient(to top, #8B0000, #054F77);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+      }
+
+     /* Chevrolet Camaro SS - Conversível Estilos embutidos na página (dentro da tag 'style') */
+      /* Estilos para o corpo (body) */
+      body {
+        background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66444.jpg'); /* Define uma imagem de fundo para o corpo da página */
+        font-family: Arial, sans-serif; /* Define a família de fontes para o corpo */
+        margin: 0; /* Remove margens externas */
+        padding: 0; /* Remove preenchimento externo */
+      }
+
+      /* Estilos para o cabeçalho */
+      header {
+        background: linear-gradient(to bottom, #8B0000, #054F77); /* Define um fundo de gradiente linear para o cabeçalho */
+        text-align: center; /* Centraliza o conteúdo do cabeçalho horizontalmente */
+        padding: 10px 0; /* Define um preenchimento na parte superior e inferior do cabeçalho */
+        color: white; /* Cor do texto no cabeçalho como branco */
+      }
+
+      header h1 {
+        font-size: 36px; /* Tamanho da fonte do título principal */
+        margin: 0; /* Remove a margem do título principal */
+      }
+
+      /* Estilos para o contêiner principal */
+      .container {
+        max-width: 1200px; /* Define a largura máxima do contêiner principal */
+        margin: 20px auto; /* Define margens da parte superior e inferior e centraliza horizontalmente */
+        background-color: white; /* Define a cor de fundo do contêiner principal como branco */
+        background-size: cover; /* Redimensiona a imagem de fundo para cobrir o contêiner */
+        border: 1px solid #ddd; /* Adiciona uma borda sólida com cor cinza claro */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao contêiner */
+        padding: 20px; /* Define o preenchimento interno */
+      }
+
+      .car-image {
+        text-align: center; /* Centraliza o conteúdo do elemento com a classe "car-image" */
+      }
+
+      .car-image img {
+        max-width: 100%; /* A imagem não deve exceder a largura do seu contêiner pai */
+        height: auto; /* A altura da imagem é ajustada automaticamente para manter a proporção original */
+      }
+
+      .car-details {
+        text-align: left; /* Define o alinhamento de texto à esquerda para o elemento com a classe "car-details" */
+        padding: 20px; /* Define o preenchimento interno */
+      }
+
+      .car-details h2 {
+        font-size: 24px; /* Define o tamanho da fonte para os títulos secundários */
+        margin: 0; /* Remove a margem dos títulos secundários */
+      }
+
+      .car-details p {
+        margin: 10px 0; /* Define a margem da parte superior e inferior dos parágrafos */
+      }
+
+      /* Estilos para o rodapé */
+      footer {
+        background: linear-gradient(to top, #8B0000, #054F77); /* Define um fundo de gradiente linear para o rodapé */
+        color: white; /* Define a cor do texto no rodapé como branco */
+        text-align: center; /* Centraliza o conteúdo do rodapé horizontalmente */
+        padding: 10px; /* Define um preenchimento no rodapé */
+      }
+
+      /* Chevrolet Onix Turbo LTZ Estilos para o corpo (body) */
+      body {
+        background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66444.jpg');
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos para o cabeçalho */
+      header {
+        background: linear-gradient(to bottom, #8B0000, #054F77);
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      /* Estilos para o contêiner principal */
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: white;
+        background-size: cover;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .car-image {
+        text-align: center;
+      }
+
+      .car-image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .car-details {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .car-details h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .car-details p {
+        margin: 10px 0;
+      }
+
+      /* Estilos para o rodapé */
+      footer {
+        background: linear-gradient(to top, #8B0000, #054F77);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Honda Civic Type R Estilos para o corpo (body) */
+      body {
+        background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66444.jpg');
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos para o cabeçalho */
+      header {
+        background: linear-gradient(to bottom, #8B0000, #054F77);
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      /* Estilos para o contêiner principal */
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: white;
+        background-size: cover;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .car-image {
+        text-align: center;
+      }
+
+      .car-image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .car-details {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .car-details h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .car-details p {
+        margin: 10px 0;
+      }
+
+      /* Estilos para o rodapé */
+      footer {
+        background: linear-gradient(to top, #8B0000, #054F77);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Ford Mustang Shelby GT500 Estilos para o corpo (body) */
+      body {
+        background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66444.jpg');
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos para o cabeçalho */
+      header {
+        background: linear-gradient(to bottom, #8B0000, #054F77);
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      /* Estilos para o contêiner principal */
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .car-image {
+        text-align: center;
+      }
+
+      .car-image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .car-details {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .car-details h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .car-details p {
+        margin: 10px 0;
+      }
+
+      /* Estilos para o rodapé */
+      footer {
+        background: linear-gradient(to top, #8B0000, #054F77);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+     /* FaleC Estilo para o corpo da página */
+     body {
+         background: url('https://i.pinimg.com/originals/6f/94/bc/6f94bc83f0b71571c7317ce76605ced6.gif') center center no-repeat;
+         background-size: cover;
+         color: black;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh;
+         font-family: Arial, sans-serif;
+         position: relative;
+     }
+
+     /* Estilo para o contêiner do formulário */
+     .formulario {
+         border: 2px solid black;
+         padding: 20px;
+         width: 400px;
+         margin: 20px auto;
+         box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+         background-color: #007bff;
+         color: white;
+         position: relative;
+         z-index: 1;
+         border-radius: 10px;
+     }
+
+        /* Estilo para o formulário */
+        form {
+            color: black; /* Cor do texto */
+            display: flex; /* Layout flexível para o formulário */
+            flex-direction: column; /* Itens alinhados em uma coluna vertical */
+            align-items: center; /* Centraliza horizontalmente */
+        }
+
+        /* Login Estilo para o corpo da página */
+        body {
+            background: url('https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66444.jpg') center center no-repeat; /* Define um fundo de imagem centralizado */
+            background-size: cover; /* Redimensiona a imagem de fundo para cobrir a tela */
+            color: black; /* Define a cor do texto */
+            display: flex; /* Usa um layout flexível para o corpo */
+            flex-direction: column; /* Alinha os itens verticalmente em uma coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            justify-content: center; /* Centraliza os itens verticalmente */
+            min-height: 100vh; /* Define a altura mínima da tela para preencher a janela de visualização */
+            font-family: Arial, sans-serif; /* Define a família de fontes para o corpo */
+            position: relative; /* Define a posição como relativa para permitir o posicionamento absoluto dos elementos internos */
+        }
+
+        /* Estilo para o contêiner do formulário */
+        .container {
+            display: flex; /* Usa um layout flexível para o contêiner */
+            flex-direction: column; /* Alinha os itens verticalmente em uma coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            position: relative; /* Define a posição como relativa para permitir o posicionamento absoluto dos elementos internos */
+        }
+
+        /* Estilo para o quadrado em volta do formulário */
+        .formulario {
+            border: 2px solid black; /* Borda sólida com cor preta */
+            padding: 20px; /* Preenchimento interno */
+            width: 400px; /* Largura do formulário */
+            margin: 20px auto; /* Margens acima e abaixo e centraliza horizontalmente */
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5); /* Sombra para o formulário */
+            background-color: red; /* Cor de fundo */
+            color: white; /* Cor do texto no formulário */
+            position: relative; /* Define a posição como relativa para permitir o posicionamento absoluto dos elementos internos */
+            z-index: 1; /* Define uma ordem de sobreposição (empilhamento) superior para o formulário */
+            border-radius: 10px; /* Borda arredondada para o formulário */
+        }
+
+        /* Estilo para o formulário */
+        form {
+            color: red; /* Define a cor do texto */
+            display: flex; /* Usa um layout flexível para o formulário */
+            flex-direction: column; /* Alinha os itens verticalmente em uma coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+        }
+
+        /* Estilo para os campos de entrada (borda arredondada) */
+        input[type="text"], input[type="password"] {
+            border: 2px solid black; /* Borda sólida e cor */
+            padding: 10px; /* Preenchimento interno */
+            border-radius: 20px; /* Borda arredondada para os campos de entrada */
+            margin: 5px; /* Margem entre os campos de entrada */
+        }
+
+        /* Estilo para o botão de login */
+        .login-button {
+            background-color: black; /* Cor de fundo para o botão */
+            color: white; /* Cor do texto no botão */
+            padding: 10px 20px; /* Preenchimento interno do botão */
+            border: none; /* Sem borda no botão */
+            cursor: pointer; /* Cursor do mouse se transforma em uma mão quando passa sobre o botão */
+            border-radius: 20px; /* Borda arredondada para o botão */
+        }
+
+        /* Estilo para a imagem acima do campo "Nome" */
+        .image-above-name {
+            display: flex; /* Usa um layout flexível para a imagem e o texto */
+            flex-direction: column; /* Alinha os itens verticalmente em uma coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+        }
+
+        /* Estilo para redimensionar a imagem acima do campo "Nome" */
+        .image-above-name img {
+            width: 75px; /* Largura da imagem */
+            height: 75px; /* Altura da imagem */
+        }
+
+        /* Estilo para o rodapé */
+        #footer {
+            text-align: center; /* Centraliza o texto horizontalmente */
+            background-color: #f0f0f0; /* Cor de fundo para o rodapé */
+            padding: 10px; /* Preenchimento interno */
+            font-size: 14px; /* Tamanho da fonte do texto do rodapé */
+        }

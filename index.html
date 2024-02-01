@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Max Karros</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Cabeçalho -->
+  <header>
+
+     <style>
+      /* Estilos para o cabeçalho */
+       header {
+           background: linear-gradient(to bottom, #8B0000, #054F77);
+           text-align: center;
+           padding: 5px 0; /* Reduzi o padding para diminuir a altura */
+           color: white;
+           width: 100%;
+           z-index: 1000;
+           position: relative; /* Adicionei position: relative; */
+       }
+
+       /* Estilos para a barra de pesquisa */
+       .search-bar {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 10px; /* Ajustei a margem para mover acima do cabeçalho */
+           position: relative; /* Posicionamento em relação ao cabeçalho */
+           width: 100%;
+       }
+
+       .search-input {
+           padding: 10px;
+           font-size: 16px;
+           background-color: #000;
+           color: #FFF;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+
+       .search-button {
+           padding: 10px 20px;
+           font-size: 16px;
+           background-color: #B70000;
+           color: #000;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+       .search-button:hover {
+           background-color: #054F77;
+       }
+        /* Estilos para a barra de navegação */
+        .navbar {
+          background-color: #333;
+          color: #FFF;
+          text-align: center;
+          padding: 10px;
+        }
+        .navbar a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 10px;
+        }
+        .news-item {
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+          text-align: center;
+          display: flex; /* Adiciona o estilo */
+          flex-wrap: wrap; 
+          justify-content: space-around; 
+          align-items: center; 
+        }
+        .news-title {
+          font-size: 24px;
+        }
+        .news-date {
+          color: #888;
+        }
+        .news-item img {
+          display: block;
+          max-width: 260px;
+          height: 260px;
+          margin: 0 10px; /* Espaçamento entre as imagens */
+        }
+        .news-item .image-container {
+          position: relative;
+        }
+        .news-item .image-container a {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          padding: 10px;
+          border-radius: 50%;
+          text-decoration: none;
+        }
+        .news-item .image-container .left-arrow {
+          left: 0;
+        }
+        .news-item .image-container .right-arrow {
+          right: 0;
+        }
+        .news-item button {
+          background-color: #B70000; /* Escolha a cor */
+          color: #fff;
+          font-size: 16px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .news-item button:hover {
+          background-color: #0056b3;
+        }
+        </style>
+    <img src="MK.png" alt="Logo" width="250" height="250" class="logo">
+    <div class="icons">
+      <!-- Links de ícones para fale conosco e login -->
+      <a href="FaleC.html">
+        <img src="https://oxi3.com.br/img/icons-new/live-chat.png" alt="Fale conosco"  width="35" height="35">
+      </a>
+      <a href="LoginC.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/74/74472.png" alt="Usuário"  width="35" height="35">
+      </a>
+    </div>
+  </header>
+
+  <!-- Barra de pesquisa -->
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Pesquisar...">
+    <button class="search-button">🔎Buscar</button>
+  </div>
+  <!-- Imagem principal -->
+  <img src="https://assinecarro.com.br/wp-content/uploads/2021/05/carros-1.png" style="width: 100%; max-height: 10%; display: block; margin: 10px auto;">
+
+  <!-- Container -->
+  <div class="news-container">
+    <div class="news-item">
+      <a class="left-arrow">❮</a>
+      <!-- Links para páginas de detalhes de carros com imagens e informações -->
+      <a href="Carro1.html">
+        <img src="https://orca.com.br/uploads/products/versions/colors/chevrolet-camaro-conversivel-preto.png" width="290" height="290" alt="Carro1">
+        <p> Chevrolet Camaro SS (2019)</p>
+        <p> R$ 572.540,00</p>
+      </a>
+      <a href="Carro2.html">
+        <img src="https://jorlan.com/bh/uploads/products/versions/colors/bbranco-onix-ltz-mt.png" width="260" height="260" alt="Carro2">
+        <p> Chevrolet Onix Turbo LTZ (2024)</p>
+        <p> R$ 108.350,00</p>
+      </a>
+      <a href="Carro3.html">
+        <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-05/01_Honda_Civic_Type-R_Frente_Lateral_Blue_Pearl.png" width="290" height="270" alt="Carro3">
+        <p> Honda Civic Type R (2023)</p>
+        <p> R$ 429.900,00</p>
+      </a>
+      <a href="Carro4.html">
+        <img src="https://d2qldpouxvc097.cloudfront.net/image-by-path?bucket=a5-gallery-serverless-prod-chromebucket-1iz9ffi08lwxm&key=419348%2Ffront34%2Flg%2F9e1c2f" width="260" height="260" alt="Carro4">
+        <p> Ford Mustang GT500 (2021)</p>
+        <p> R$ 355.159,00</p>
+      </a>
+      <a class="right-arrow">❯</a>
+    </div>
+  </div>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <!-- <p>Autores: Jean Soares e Kamilly Vitoria</p>
+    <p>Criação do site: 17/10/2023</p>
+    <p>Versão: 1.1</p> -->
+    <p>Copyright © 2023. Todos os direitos reservados.</p>
+    <!-- Ícones das redes sociais -->
+    <a href="https://www.twitter.com/seu-usuario-do-twitter" target="_blank">
+      <img src="https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" alt="Twitter" width="25" height="25">
+    </a>
+    <a href="https://www.instagram.com/seu-usuario-do-instagram" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width="25" height="25">
+    </a>
+    <a href="https://www.facebook.com/seu-usuario-do-facebook" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png" alt="Facebook" width="25" height="25">
+    </a>
+  </footer>
+</body>
+</html>
